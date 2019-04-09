@@ -8,9 +8,12 @@ We build a nginx container that uses `inotifywait` to check for `nginx.conf` cha
 This allows us to mount the config to the container for easy editing.  
 Every time you hit save, `watcher.sh` calls `nginx -s reload`.  
 
-To get started:
+* To get started:
 
 ```
 make build
 make start
+
+# or to run in background
+make run
 ```
